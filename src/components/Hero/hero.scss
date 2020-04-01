@@ -1,0 +1,49 @@
+.hero{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    padding: 24px 16px;
+    &__background{
+        box-sizing: border-box;
+        width: 100%;
+        height: 91vh;
+    }
+    &__text{
+        box-sizing: border-box;
+        color: white;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 250px;
+        line-height: 48px;
+        z-index: 3;
+        &--heading{
+            text-align: left;
+        }
+    }
+
+}
+.hero:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 24px;
+    right: 16px;
+    bottom: 28px;
+    left: 16px;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+    overflow: hidden;
+}
+
+//  h1:before {
+//     content: '<h1>';
+//     font-family: 'La Belle Aurore',cursive;
+//     color: #515152;
+//     font-size: 18px;
+//     position: absolute;
+//     margin-top: -40px;
+//     left: -15px;
+// }

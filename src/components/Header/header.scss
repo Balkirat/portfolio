@@ -1,0 +1,22 @@
+.header{
+    height: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    align-items: center;
+    color: white;
+    &__name{
+        display: flex;
+        width: 30%;
+        justify-content: center;
+    }
+    &__nav{
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        &--link{
+            color: white;
+        }
+    }
+}
