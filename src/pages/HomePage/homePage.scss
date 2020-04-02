@@ -1,3 +1,13 @@
 @import "../../styles/partials/resets";
 @import "../../styles/partials/variables";
 @import "../../styles/partials/breakpoints";
+
+.test {
+  position: relative;
+  top: 85vh;
+  width: 100%;
+  &__text{
+      width: 100%;
+  }
+}
+

@@ -8,7 +8,7 @@ class Header extends Component {
       <>
         <header className="header">
           <div className="header__name">
-            <h2>B/SINGH</h2>
+            <h2>B/Singh</h2>
           </div>
           <div className="header__nav">
             <Link className="header__nav--link" style={{ textDecoration: 'none' }} to="/about">About</Link>

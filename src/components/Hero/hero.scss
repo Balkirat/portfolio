@@ -1,49 +1,200 @@
-.hero{
+.hero {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  padding: 24px 16px;
+  overflow: hidden;
+  &__background {
     box-sizing: border-box;
+    width: 100%;
+    height: 91vh;
+  }
+  &__text {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 0px;
-    padding: 24px 16px;
-    &__background{
-        box-sizing: border-box;
-        width: 100%;
-        height: 91vh;
+    top: 250px;
+    left: 0;
+    line-height: 48px;
+    z-index: 3;
+    &--heading {
+        margin-left: -235px;
+      opacity: 0;
+      animation: text 4s ease forwards 4s;
     }
-    &__text{
-        box-sizing: border-box;
-        color: white;
-        width: 96%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 250px;
-        line-height: 48px;
-        z-index: 3;
-        &--heading{
-            text-align: left;
-        }
-    }
-
+  }
 }
+
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#name {
+  animation: fill 1s ease forwards 5s;
+}
+
+#name path:nth-child(1) {
+  stroke-dasharray: 312px;
+  stroke-dashoffset: 312px;
+  animation: line-anim 2s ease forwards;
+}
+#name path:nth-child(2) {
+  stroke-dasharray: 142px;
+  stroke-dashoffset: 142px;
+  animation: line-anim 2s ease forwards 0.2s;
+}
+#name path:nth-child(3) {
+  stroke-dasharray: 51px;
+  stroke-dashoffset: 51px;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+#name path:nth-child(4) {
+  stroke-dasharray: 145px;
+  stroke-dashoffset: 145px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#name path:nth-child(5) {
+  stroke-dasharray: 48px;
+  stroke-dashoffset: 48px;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+#name path:nth-child(6) {
+  stroke-dasharray: 324px;
+  stroke-dashoffset: 324px;
+  animation: line-anim 2s ease forwards 1s;
+}
+#name path:nth-child(7) {
+  stroke-dasharray: 270px;
+  stroke-dashoffset: 270px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#name path:nth-child(8) {
+  stroke-dasharray: 192px;
+  stroke-dashoffset: 192px;
+  animation: line-anim 2s ease forwards 1.4s;
+}
+#name path:nth-child(9) {
+  stroke-dasharray: 140px;
+  stroke-dashoffset: 140px;
+  animation: line-anim 2s ease forwards 1.6s;
+}
+#name path:nth-child(10) {
+  stroke-dasharray: 250px;
+  stroke-dashoffset: 250px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#name path:nth-child(11) {
+  stroke-dasharray: 142px;
+  stroke-dashoffset: 142px;
+  animation: line-anim 2s ease forwards 2s;
+}
+#name path:nth-child(12) {
+  stroke-dasharray: 135px;
+  stroke-dashoffset: 135px;
+  animation: line-anim 2s ease forwards 2.2s;
+}
+#name path:nth-child(13) {
+  stroke-dasharray: 192px;
+  stroke-dashoffset: 192px;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+#name path:nth-child(14) {
+  stroke-dasharray: 133px;
+  stroke-dashoffset: 133px;
+  animation: line-anim 2s ease forwards 2.6s;
+}
+#name path:nth-child(15) {
+  stroke-dasharray: 240px;
+  stroke-dashoffset: 240px;
+  animation: line-anim 2s ease forwards 2.8s;
+}
+#name path:nth-child(16) {
+  stroke-dasharray: 142px;
+  stroke-dashoffset: 142px;
+  animation: line-anim 2s ease forwards 3s;
+}
+#name path:nth-child(17) {
+  stroke-dasharray: 217px;
+  stroke-dashoffset: 217px;
+  animation: line-anim 2s ease forwards 3.2s;
+}
+#name path:nth-child(18) {
+  stroke-dasharray: 236px;
+  stroke-dashoffset: 236px;
+  animation: line-anim 2s ease forwards 3.4s;
+}
+#name path:nth-child(19) {
+  stroke-dasharray: 247px;
+  stroke-dashoffset: 247px;
+  animation: line-anim 2s ease forwards 3.6s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+// this is for overlay
 .hero:before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 24px;
-    right: 16px;
-    bottom: 28px;
-    left: 16px;
-    background-color: rgba(0,0,0,.3);
-    z-index: 1;
-    overflow: hidden;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 24px;
+  right: 16px;
+  bottom: 28px;
+  left: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  overflow: hidden;
 }
 
-//  h1:before {
-//     content: '<h1>';
-//     font-family: 'La Belle Aurore',cursive;
-//     color: #515152;
-//     font-size: 18px;
-//     position: absolute;
-//     margin-top: -40px;
-//     left: -15px;
-// }
+
+
+//for h1 element
+.hero__text:before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  margin-top: -63px;
+  left: -280px;
+}
+
+.hero__text:after {
+    content: "</h1>";
+    font-family: "La Belle Aurore", cursive;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    margin-top: -10px;
+    left: -280px;
+  }
