@@ -1,5 +1,7 @@
 import React from "react";
 import background from "../../assets/heroImg.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./hero.scss";
 
 function Hero() {
@@ -132,6 +134,12 @@ function Hero() {
             />
           </svg>
           <h1 className="hero__text--heading">Full Stack Developer</h1>
+        </div>
+        <div className="hero__scroll">
+          <p>
+            Learn More <br></br>
+            <FontAwesomeIcon icon={faChevronDown} />
+          </p>
         </div>
       </div>
     </>
