@@ -2,12 +2,9 @@
 @import "../../styles/partials/variables";
 @import "../../styles/partials/breakpoints";
 
-.test {
+.main {
   position: relative;
-  top: 85vh;
+  top: 90vh;
   width: 100%;
-  &__text{
-      width: 100%;
-  }
 }
 

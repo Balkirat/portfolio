@@ -2,6 +2,7 @@ import React from "react";
 import background from "../../assets/heroImg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./hero.scss";
 
 function Hero() {
@@ -138,7 +139,23 @@ function Hero() {
         <div className="hero__scroll">
           <p>
             Learn More <br></br>
-            <FontAwesomeIcon icon={faChevronDown} />
+            <span className="hero__scroll--icon">
+              <Link
+                activeClass="active"
+                className="header__nav--link"
+                style={{ textDecoration: "none" }}
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                {" "}
+                <i className="hero__scroll--logo">
+                  <FontAwesomeIcon icon={faChevronDown} />
+                </i>
+              </Link>
+            </span>
           </p>
         </div>
       </div>

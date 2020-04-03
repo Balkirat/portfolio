@@ -8,7 +8,6 @@ import {
 import "./App.scss";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
-import ScrollableSection, { ScrollableLink } from "react-update-url-on-scroll";
 import About from "./pages/About";
 
 class App extends Component {
@@ -18,10 +17,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path="/" exact component={HomePage} />
-            <Route path="/about" component={About} />
- 
           </Switch>
-
         </Router>
 
       </>

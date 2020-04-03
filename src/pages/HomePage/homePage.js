@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./homePage.scss";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import About from "../../components/About";
 
 class HomePage extends Component {
   constructor() {
@@ -12,15 +13,13 @@ class HomePage extends Component {
   render() {
     return (
       <>
-        <div>
+        <div id="main">
           <Header />
           <Hero />
         </div>
-        <div className="test">
-          <h1>TESTING</h1>
-          <p className="test__text">lorem djl;fsg;fsg; jfsjk;sfgj;k</p>
-        </div>
-
+        <main className="main">
+          <About/>
+        </main>
       </>
     );
   }
