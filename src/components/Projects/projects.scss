@@ -1,0 +1,70 @@
+.project {
+    padding: 24px 16px;
+    &__heading{
+        text-align: center;
+        font-family:  "La Belle Aurore", cursive;
+        font-size: 40px;
+    }
+  &__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  &__info {
+    width: 40%;
+    margin-top: 100px;
+    height: fit-content;
+    padding: 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 14px -5px;
+    background-image: linear-gradient(
+        to bottom,
+        #000000,
+        #22080d,
+        #380a11,
+        #50060e,
+        #660303
+      );  
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    &--heading{
+        margin-bottom: 16px;
+        color: red;
+        text-align: center;
+        font-family:  "La Belle Aurore", cursive;
+    }
+    &--subheading{
+        color: brown;
+        text-align: center;
+        line-height: 28px;
+        margin-bottom: 12px;
+        font-family:  "La Belle Aurore", cursive;
+    }
+    &--tech{
+        text-align: center;
+        font-family:  "La Belle Aurore", cursive;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-evenly
+    }
+    &__button{
+        font-family:  "La Belle Aurore", cursive;
+        margin-top: 16px;
+        width: 140px;
+        outline: none;
+        border: none;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid white;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        &--red{
+            background-color: brown;
+        }
+    }
+  }
+  &__images {
+    width: 50%;
+  }
+}

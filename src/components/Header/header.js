@@ -36,6 +36,18 @@ class Header extends Component {
               activeClass="active"
               className="header__nav--link"
               style={{ textDecoration: "none" }}
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Projects
+            </Link>
+            <Link
+              activeClass="active"
+              className="header__nav--link"
+              style={{ textDecoration: "none" }}
               to="Skill"
               spy={true}
               smooth={true}
@@ -43,18 +55,6 @@ class Header extends Component {
               duration={500}
             >
               Skills
-            </Link>
-            <Link
-              activeClass="active"
-              className="header__nav--link"
-              style={{ textDecoration: "none" }}
-              to="project"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Projects
             </Link>
             <Link
               activeClass="active"
