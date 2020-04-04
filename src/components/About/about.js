@@ -12,15 +12,14 @@ function About() {
   return (
     <>
       <div className="main__about" id="about">
-        <div>
-          <h1>ABOUT</h1>
-          <h3>Hello, I'm Balkirat!</h3>
-          <p>
+        <div className="main__about__container">
+        <h1 className="main__about--heading">ABOUT</h1>
+          <h3 className="main__about--subheading">Hello, I'm Balkirat!
             I am recent graduate in web dev diploma program from BrainStation. I
             am currently working as freelancer and also looking for new
             employment oppurtunities. I enjoy buidling creative websites and
             always learning new skills in Web Development.
-          </p>
+            </h3>
         </div>
         <div className="wrap">
           <div className="wrap__cube">
