@@ -12,6 +12,7 @@ import contact from "../../assets/contact.png";
 import login from "../../assets/titleSlide.png";
 import search from "../../assets/search.png";
 import potter from "../../assets/mockup.png";
+import brainflix from "../../assets/brainflix2.png"
 
 class Projects extends Component {
   render() {
@@ -127,7 +128,7 @@ class Projects extends Component {
                 </h4>
               </div>
               <div className="project2__image">
-                <img src={potter}></img>
+                <img className="project2__image--bigger" src={brainflix}></img>
               </div>
             </div>
           </article>
