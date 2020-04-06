@@ -210,7 +210,7 @@
 //for h1 element
 .hero__text:before {
   content: "<h1>";
-  font-family: "La Belle Aurore", cursive;
+  font-family: "RobotoRegular";
   color: white;
   font-size: 18px;
   position: relative;
@@ -220,7 +220,7 @@
 
 .hero__text:after {
     content: "</h1>";
-    font-family: "La Belle Aurore", cursive;
+    font-family: "RobotoRegular";
     color: white;
     font-size: 18px;
     position: relative;
