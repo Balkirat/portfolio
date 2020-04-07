@@ -1,0 +1,22 @@
+.skills{
+    height: 100vh;
+    &__heading{
+        margin-top: 100px;
+        font-family: "RobotoBold";
+        font-size: 60px;
+        text-align: center;
+    }
+    &__container{
+        width: 70%;
+        align-items: center;
+        margin: 150px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        & > img,svg{
+            width: 220px;
+            height: 220px;
+            margin-bottom: 75px;
+        }
+    }
+}

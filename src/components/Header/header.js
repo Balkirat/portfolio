@@ -48,7 +48,7 @@ class Header extends Component {
               activeClass="active"
               className="header__nav--link"
               style={{ textDecoration: "none" }}
-              to="Skill"
+              to="skill"
               spy={true}
               smooth={true}
               offset={0}
