@@ -12,7 +12,7 @@ import contact from "../../assets/contact.png";
 import login from "../../assets/titleSlide.png";
 import search from "../../assets/search.png";
 import potter from "../../assets/mockup.png";
-import brainflix from "../../assets/brainflix2.png"
+import brainflix from "../../assets/brainflix2.png";
 
 class Projects extends Component {
   render() {
@@ -55,14 +55,21 @@ class Projects extends Component {
                     Live
                   </button>
                 </a>
-                <a>
+                <a target="_blank" href="https://github.com/Balkirat/myMovie">
                   <button className="project__info__button project__info__button--red">
                     Git Repo
                   </button>
                 </a>
-                <button className="project__info__button project__info__button--red">
-                  Video
-                </button>
+                <a
+                  target="_blank"
+                  href="https://www.loom.com/share/5d333033290c41f4a862d0c7819e5bb2"
+                >
+                  {" "}
+                  <button className="project__info__button project__info__button--red">
+                    Video
+                  </button>
+                </a>
+                <a />
               </div>
             </div>
             <div className="project__images">
@@ -91,48 +98,53 @@ class Projects extends Component {
               </Slider>
             </div>
           </article>
-        <div>
-          <article className="project2">
-            <div className="project2__card">
-              <div className="project2__image">
-                <img src={potter}></img>
+          <div>
+            <article className="project2">
+              <div className="project2__card">
+                <div className="project2__image">
+                  <img src={potter}></img>
+                </div>
+                <div className="project2__info">
+                  <h2 className="project2__info--heading">SORTING HAT</h2>
+                  <h4 className="project2__info--subheading">
+                    A simple react project based on API I build this with a
+                    friend in a 4 hours in a class challenge. It was a very fun
+                    project with some cool animations and background music. it
+                    just take your name and sort you into a random Harry Potter
+                    House.
+                  </h4>
+                  <h4 className="project2__info--subheading">
+                    {" "}
+                    React / JavaScirpt / Sass / API
+                  </h4>
+                </div>
               </div>
-              <div className="project2__info">
-                <h2 className="project2__info--heading">SORTING HAT</h2>
-                <h4 className="project2__info--subheading">
-                  A simple react project based on API I build this with a friend
-                  in a 4 hours in a class challenge. It was a very fun project
-                  with some cool animations and background music. it just take
-                  your name and sort you into a random Harry Potter House.
-                </h4>
-                <h4 className="project2__info--subheading">
-                  {" "}
-                  React / JavaScirpt / Sass / API
-                </h4>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article className="project2">
-            <div className="project2__card project2__card--color">
-              <div className="project2__info">
-                <h2 className="project2__info--heading">BRAINFLIX</h2>
-                <h4 className="project2__info--subheading">
-                  This project is made using React, it also features a Node.JS/Express RESTful API and a
-                  fully responsive Front-end. The project mimics the Youtube UI
-                  and user can upload a video and comment on existing videos. 
-                </h4>
-                <h4 className="project2__info--subheading">
-                  {" "}
-                  React / JavaScirpt / Sass / API
-                </h4>
+            <article className="project2">
+              <div className="project2__card project2__card--color">
+                <div className="project2__info">
+                  <h2 className="project2__info--heading">BRAINFLIX</h2>
+                  <h4 className="project2__info--subheading">
+                    This project is made using React, it also features a
+                    Node.JS/Express RESTful API and a fully responsive
+                    Front-end. The project mimics the Youtube UI and user can
+                    upload a video and comment on existing videos.
+                  </h4>
+                  <h4 className="project2__info--subheading">
+                    {" "}
+                    React / JavaScirpt / Sass / API
+                  </h4>
+                </div>
+                <div className="project2__image">
+                  <img
+                    className="project2__image--bigger"
+                    src={brainflix}
+                  ></img>
+                </div>
               </div>
-              <div className="project2__image">
-                <img className="project2__image--bigger" src={brainflix}></img>
-              </div>
-            </div>
-          </article>
-        </div>
+            </article>
+          </div>
         </div>
       </>
     );
