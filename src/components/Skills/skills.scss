@@ -1,5 +1,4 @@
 .skills{
-    height: 100vh;
     &__heading{
         margin-top: 100px;
         font-family: "RobotoBold";
@@ -9,7 +8,7 @@
     &__container{
         width: 70%;
         align-items: center;
-        margin: 150px auto;
+        margin: 150px auto 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;

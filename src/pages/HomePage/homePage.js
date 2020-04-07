@@ -5,6 +5,7 @@ import Hero from "../../components/Hero";
 import About from "../../components/About";
 import Projects from "../../components/Projects";
 import Skills from "../../components/Skills";
+import Footer from "../../components/Footer"
 
 class HomePage extends Component {
   constructor() {
@@ -23,6 +24,7 @@ class HomePage extends Component {
           <About/>
           <Projects />
           <Skills />
+          <Footer />
         </main>
       </>
     );
