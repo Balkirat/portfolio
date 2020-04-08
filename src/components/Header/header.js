@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./header.scss";
+import HamburgerButton from "../HamburgerButton";
 
 class Header extends Component {
-  render() {
+  render(props) {
     return (
       <>
         <header className="header">
+          <div className="header__hamburger">
+            <div className="toolbar__toggle-button">
+              <HamburgerButton click={this.props.ToggleClickHandler} />
+            </div>
+          </div>
+
           <div className="header__name">
-          <Link
+            <Link
               activeClass="active"
               className="header__nav--link"
               style={{ textDecoration: "none" }}
@@ -17,7 +24,9 @@ class Header extends Component {
               smooth={true}
               offset={0}
               duration={500}
-            ><h2>B/Singh</h2></Link>
+            >
+              <h2>B/Singh</h2>
+            </Link>
           </div>
           <div className="header__nav">
             <Link
