@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const hamburgerButton = props => (
   <button className="toggle-button">
-    <FontAwesomeIcon icon={faBars} onClick={props.click} />
+    <FontAwesomeIcon id="hamburger-icon" icon={faBars} onClick={props.click} />
   </button>
 );
 

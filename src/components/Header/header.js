@@ -8,12 +8,6 @@ class Header extends Component {
     return (
       <>
         <header className="header">
-          <div className="header__hamburger">
-            <div className="toolbar__toggle-button">
-              <HamburgerButton click={this.props.ToggleClickHandler} />
-            </div>
-          </div>
-
           <div className="header__name">
             <Link
               activeClass="active"
@@ -77,6 +71,9 @@ class Header extends Component {
             >
               Contact Me
             </Link>
+          </div>
+          <div className="header__hamburger">
+              <HamburgerButton click={this.props.ToggleClickHandler} />
           </div>
         </header>
       </>
