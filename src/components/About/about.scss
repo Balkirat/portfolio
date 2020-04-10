@@ -16,11 +16,21 @@
     height: max-content;
     margin-top: 70px;
   }
+  @include tablet{
+    padding: 24px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
   &__container {
     margin: auto 0;
     width: 40%;
     font-family: "RobotoBold";
     @include mobile {
+      width: 100%;
+      margin: 0;
+    }
+    @include tablet {
       width: 100%;
       margin: 0;
     }
@@ -55,7 +65,9 @@
     width: 230px;
     margin: 0 auto 300px;
     padding: 0;
-  
+  }
+  @include tablet{
+    margin:100px auto 200px;
   }
   &__cube {
     transform-style: preserve-3d;

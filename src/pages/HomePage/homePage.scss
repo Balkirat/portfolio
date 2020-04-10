@@ -9,7 +9,9 @@
   width: 100%;
   @include mobile{
     top: 450px;
-    
+  }
+  @include tablet{
+    top: 65vh;
   }
 }
 

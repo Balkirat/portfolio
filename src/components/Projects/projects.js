@@ -42,7 +42,7 @@ class Projects extends Component {
                 Netflix or not. I made advance search (better filters) page to
                 choose a movie. But advance search page is only available to
                 signed in Users. More features are coming
-                soon....................
+                soon...
               </h3>
               <h4 className="project__info--tech">
                 {" "}

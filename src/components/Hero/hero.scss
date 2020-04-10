@@ -19,6 +19,9 @@
     @include mobile{
       height: 500px;
     }
+    @include tablet{
+      height: 65vh;
+    }
   }
   &__text {
     color: white;
@@ -57,6 +60,9 @@
     font-size: 18px;
     @include mobile{
       top: 415px;
+    }
+    @include tablet{
+      top: 57vh;
     }
     & p{
       cursor: pointer;      
