@@ -7,5 +7,9 @@
   position: relative;
   top: 90vh;
   width: 100%;
+  @include mobile{
+    top: 450px;
+    
+  }
 }
 

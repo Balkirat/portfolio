@@ -5,8 +5,6 @@ import html from "../../assets/html.png";
 import node from "../../assets/node.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
-import sass from "../../assets/sass.png";
-import git from "../../assets/github.png";
 
 function About() {
   return (
