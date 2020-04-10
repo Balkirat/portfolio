@@ -10,10 +10,11 @@
     background-color: white;
     text-align: center;
     font-family: "RobotoBold";
-    font-size: 40px;
+    font-size: 56px;
     padding-bottom: 30px;
     @include mobile {
       margin-bottom: 22px;
+      font-size: 40px;
     }
   }
   &__container {
@@ -35,12 +36,12 @@
     }
     &--heading {
       margin-bottom: 16px;
-      color: red;
+      color: black;
       text-align: center;
       font-family: "RobotoBold";
     }
     &--subheading {
-      color: brown;
+      color: black;
       text-align: center;
       line-height: 28px;
       margin-bottom: 12px;
@@ -48,15 +49,19 @@
       @include mobile{
         font-size: 16px;
         line-height: 20px;
+        padding: 0 8px;
       }
     }
     &--tech {
       text-align: center;
       font-family: "RobotoRegular";
+      @include mobile{
+        padding: 0 8px;
+      }
     }
     &__links {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
     }
     &__button {
       font-family: "RobotoRegular";
@@ -74,7 +79,6 @@
         width: 100px;
         height: 40px;
         font-size: 12px;
-       
       }
       &--red {
         color: white;
@@ -149,7 +153,7 @@
     width: 40%;
     @include mobile {
       width: 100%;
-      
+      max-width: 410px;
     }
     & > img {
       width: 90%;

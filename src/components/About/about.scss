@@ -27,11 +27,12 @@
   }
   &--heading {
     text-align: center;
-    font-size: 50px;
+    font-size: 56px;
+    font-size: 60px;
     margin-bottom: 15px;
     font-family: "RobotoBold";
     @include mobile {
-      font-size: 32px;
+      font-size: 40px;
     }
   }
   &--subheading {
