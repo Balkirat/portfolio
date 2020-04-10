@@ -1,5 +1,7 @@
 @import "../../styles/partials/variables";
 @import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+@import "../../styles/partials/resets";
 
 .header{
     height: 100px;
@@ -9,6 +11,9 @@
     z-index: 2;
     align-items: center;
     color: white;
+    @include mobile{
+        height: 50px;  
+    }
     &__name{
         display: flex;
         width: 30%;

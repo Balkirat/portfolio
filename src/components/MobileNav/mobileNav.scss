@@ -8,29 +8,36 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    background-color: rgba($color: #000000, $alpha: .9);
     color: white;
     @include tablet {
         display: none;
     }
     &__container{
         height: 100%;
-        width: 100%;
-        
+        width: 100%;  
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 150px;
         align-items: center;
     }
     &--link{
         font-size: 1.5rem;
         margin-bottom: 70px;
-
     }
     &__button{
         position: absolute;
-        right: 25px;
+        right: 15px;
         color: white;
         top: 10px;
+        border: none;
+        outline: 0;
+        background: transparent;
+    }
+    &__icon{
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 32px;
     }
 }

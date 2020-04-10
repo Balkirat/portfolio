@@ -2,9 +2,12 @@ import React from "react";
 import "./mobileNav.scss";
 import { motion } from "framer-motion";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+
 
 const variants = {
-  open: { y: 10 },
+  open: { y: 0 },
   closed: { y: "50%", transition: { delay: 200 } }
 };
 
@@ -73,7 +76,7 @@ const mobileNav = props => {
         </Link>
       </div>
       <div className="mobile-nav__button">
-        <button onClick={props.CloseClickHandler}>close</button>
+        <button className="mobile-nav__button" onClick={props.CloseClickHandler}><FontAwesomeIcon className="mobile-nav__icon" icon={faTimes}/></button>
       </div>
     </motion.nav>
   );
