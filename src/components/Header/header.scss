@@ -27,7 +27,12 @@
             display: none;
         }
         &--link{
+            font-size: 20px;
             color: white;
+            cursor: pointer;
+            &:hover{
+                color:lightcoral
+            }
         }
     }
     &__hamburger{

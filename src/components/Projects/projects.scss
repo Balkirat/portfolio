@@ -55,6 +55,7 @@
     &--tech {
       text-align: center;
       font-family: "RobotoRegular";
+      color: #f61c52;
       @include mobile{
         padding: 0 8px;
       }
@@ -72,6 +73,8 @@
       height: 50px;
       border-radius: 5px;
       border: 1px solid white;
+      box-shadow: 0 5px 9px 0 rgba(0,0,0,.4);
+      
       font-size: 20px;
       text-align: center;
       cursor: pointer;
@@ -82,7 +85,7 @@
       }
       &--red {
         color: white;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #f61c52;
         margin-right: 16px;
         @include mobile{
           margin-right: 0;
@@ -182,6 +185,9 @@
     }
     &--subheading {
       font-family: "RobotoMedium";
+    }
+    &--tech{
+      color:#f61c52;
     }
   }
 }

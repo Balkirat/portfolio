@@ -18,9 +18,9 @@ function skills() {
 
         <div className="skills__container">
           <img src={html} alt="logos"></img>
-          <img src={css} alt="logos"></img>
-          <img src={sass} alt="logos"></img>
           <img src={js} alt="logos"></img>
+          <img src={sass} alt="logos"></img>
+          <img src={css} alt="logos"></img>
           <img src={react} alt="logos"></img>
           <img src={node} alt="logos"></img>
           <img src={mongo} alt="logos"></img>

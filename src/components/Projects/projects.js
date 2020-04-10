@@ -113,7 +113,7 @@ class Projects extends Component {
                     just take your name and sort you into a random Harry Potter
                     House.
                   </h4>
-                  <h4 className="project2__info--subheading">
+                  <h4 className="project2__info--subheading project2__info--tech">
                     {" "}
                     React / JavaScirpt / Sass / API
                   </h4>
@@ -131,7 +131,7 @@ class Projects extends Component {
                     Front-end. The project mimics the Youtube UI and user can
                     upload a video and comment on existing videos.
                   </h4>
-                  <h4 className="project2__info--subheading">
+                  <h4 className="project2__info--subheading project2__info--tech">
                     {" "}
                     React / JavaScirpt / Sass / API
                   </h4>
