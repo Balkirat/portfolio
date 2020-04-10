@@ -1,9 +1,18 @@
+@import "../../styles/partials/resets";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+
 .skills{
     &__heading{
         margin-top: 100px;
         font-family: "RobotoBold";
         font-size: 60px;
         text-align: center;
+        @include mobile{
+            margin: 0;
+            font-size:40px;
+        }
     }
     &__container{
         width: 70%;
@@ -12,10 +21,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        @include mobile{
+            width: 100%;
+            margin: 40px auto;
+        }
         & > img,svg{
             width: 220px;
             height: 220px;
             margin-bottom: 75px;
+            @include mobile{
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 }
