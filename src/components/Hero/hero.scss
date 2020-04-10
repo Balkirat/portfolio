@@ -20,7 +20,7 @@
       height: 500px;
     }
     @include tablet{
-      height: 65vh;
+      height: 700px;
     }
   }
   &__text {
@@ -62,7 +62,7 @@
       top: 415px;
     }
     @include tablet{
-      top: 57vh;
+      top: 650px;
     }
     & p{
       cursor: pointer;      
