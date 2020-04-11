@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../../assets/heroImg.jpg";
+import background from "../../assets/heroImg (1).jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Link, animateScroll as scroll } from "react-scroll";
