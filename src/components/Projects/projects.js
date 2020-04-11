@@ -35,14 +35,13 @@ class Projects extends Component {
             <div className="project__info">
               <h1 className="project__info--heading">myMovie</h1>
               <h3 className="project__info--subheading">
-                This Project is very very special to me. I made this in 10 days
-                as my capstone project. myMovie is made in React that tells the
-                user about trending movies, suggest movies based on Mood. User
-                can watch trailer and also check that is the movie available on
-                Netflix or not. I made advance search (better filters) page to
-                choose a movie. But advance search page is only available to
-                signed in Users. More features are coming
-                soon...
+                This project is very special to me. I made this in 10 days as my
+                capstone project and was created in React. myMovie tells the
+                user about trending movies and suggests movies based on their
+                mood. Users can watch trailers and also check to see if the
+                movie is available on Netflix. I made an advance search (better
+                filters) page to choose a movie, but it’s only available to
+                signed-in users. More features are coming soon...
               </h3>
               <h4 className="project__info--tech">
                 {" "}
@@ -107,15 +106,15 @@ class Projects extends Component {
                 <div className="project2__info">
                   <h2 className="project2__info--heading">SORTING HAT</h2>
                   <h4 className="project2__info--subheading">
-                    A simple react project based on API I build this with a
-                    friend in a 4 hours in a class challenge. It was a very fun
-                    project with some cool animations and background music. it
-                    just take your name and sort you into a random Harry Potter
+                    A simple react project based on an API I build with a friend
+                    in 4 hours as a class challenge. It was a very fun project
+                    with some cool animations and background music. It simply
+                    takes your name and sorts it into a random Harry Potter
                     House.
                   </h4>
                   <h4 className="project2__info--subheading project2__info--tech">
                     {" "}
-                    React / JavaScirpt / Sass / API
+                    React / JavaScript / Sass / API
                   </h4>
                 </div>
               </div>
@@ -126,14 +125,14 @@ class Projects extends Component {
                 <div className="project2__info">
                   <h2 className="project2__info--heading">BRAINFLIX</h2>
                   <h4 className="project2__info--subheading">
-                    This project is made using React, it also features a
-                    Node.JS/Express RESTful API and a fully responsive
-                    Front-end. The project mimics the Youtube UI and user can
-                    upload a video and comment on existing videos.
+                    This project is made using React, uses Node.js/Express
+                    RESTful API features, and has a fully responsive front-end.
+                    Brainflix mimics the Youtube UI and the user can upload a
+                    video or comment on existing videos.
                   </h4>
                   <h4 className="project2__info--subheading project2__info--tech">
                     {" "}
-                    React / JavaScirpt / Sass / API
+                    React / JavaScript / Sass / Node.js / Express
                   </h4>
                 </div>
                 <div className="project2__image">

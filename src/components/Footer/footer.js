@@ -21,6 +21,7 @@ function footer() {
           <div className="footer__details">
             <h1>Balkirat Singh</h1>
             <h3>Email: cheemaballu@gmail.com</h3>
+            <h3>416-272-7831</h3>
             <h3>Toronto, Canada</h3>
             <p>
               {" "}

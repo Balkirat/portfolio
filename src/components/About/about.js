@@ -11,13 +11,13 @@ function About() {
     <>
       <div className="main__about" id="about">
         <div className="main__about__container">
-        <h1 className="main__about--heading">ABOUT</h1>
-          <h3 className="main__about--subheading">Hello, I'm Balkirat!
-            I am recent graduate in web dev diploma program from BrainStation. I
-            am currently working as freelancer and also looking for new
-            employment oppurtunities. I enjoy buidling creative websites and
-            always learning new skills in Web Development.
-            </h3>
+          <h1 className="main__about--heading">ABOUT</h1>
+          <h3 className="main__about--subheading">
+            Hello, I’m Balkirat! I am a recent graduate in BrainStation’s Web
+            Development Diploma Program. I am currently working as a freelancer
+            and also looking for new employment opportunities. I enjoy building
+            creative websites and learning new skills in Web Development.
+          </h3>
         </div>
         <div className="wrap">
           <div className="wrap__cube">
@@ -33,7 +33,6 @@ function About() {
             <div className="cube cube__back">
               <img className="cube__img" src={react} alt="back"></img>
             </div>
-
           </div>
         </div>
       </div>
