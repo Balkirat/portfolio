@@ -1,5 +1,4 @@
 import React from "react";
-import Cube from "react-3d-cube";
 import "./about.scss";
 import html from "../../assets/html.png";
 import node from "../../assets/node.png";

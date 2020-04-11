@@ -19,7 +19,7 @@ class Header extends Component {
               offset={0}
               duration={500}
             >
-              <h2>B/Singh</h2>
+              <h2 className="header__logo">B/Singh</h2>
             </Link>
           </div>
           <div className="header__nav">
