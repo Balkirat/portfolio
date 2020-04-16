@@ -5,10 +5,13 @@
 
 .main__about {
   padding: 24px 16px;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 150px;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 13%, rgba(253,187,45,1) 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
   @include mobile {
     padding: 16px;
     flex-direction: column;
@@ -75,7 +78,7 @@
   }
 }
 .cube {
-  background-color: rgba(255, 255, 255, 0.4);
+  //background-color: rgba(255, 255, 255, 0.4);
   width: 290px;
   height: 300px;
   position: absolute;

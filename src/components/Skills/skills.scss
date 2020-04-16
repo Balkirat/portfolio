@@ -3,36 +3,41 @@
 @import "../../styles/partials/breakpoints";
 @import "../../styles/partials/fonts";
 
-.skills{
-    &__heading{
-        margin-top: 100px;
-        font-family: "RobotoBold";
-        font-size: 56px;
-        text-align: center;
-        @include mobile{
-            margin: 0;
-            font-size:40px;
-        }
+.skills {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 13%, rgba(253,187,45,1) 100%);
+  clip-path: polygon(0 11%, 100% 0, 99% 100%, 0% 100%);
+  &__heading {
+    // margin-top: 100px;
+    padding-top: 200px;
+    font-family: "RobotoBold";
+    font-size: 56px;
+    text-align: center;
+    @include mobile {
+      margin: 0;
+      font-size: 40px;
     }
-    &__container{
-        width: 70%;
-        align-items: center;
-        margin: 150px auto 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        @include mobile{
-            width: 100%;
-            margin: 40px auto;
-        }
-        & > img,svg{
-            width: 220px;
-            height: 220px;
-            margin-bottom: 75px;
-            @include mobile{
-                width: 150px;
-                height: 150px;
-            }
-        }
+  }
+  &__container {
+    width: 70%;
+    align-items: center;
+    margin: 150px auto 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @include mobile {
+      width: 100%;
+      margin: 40px auto;
     }
+    & > img,
+    svg {
+      width: 220px;
+      height: 220px;
+      margin-bottom: 75px;
+      @include mobile {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
 }
