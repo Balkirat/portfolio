@@ -4,9 +4,9 @@
 @import "../../styles/partials/fonts";
 
 .main__about {
-  padding: 24px 16px;
-  height: 80vh;
+  padding: 0px 16px;
   display: flex;
+  height: 600px;
   justify-content: space-evenly;
   padding-bottom: 150px;
   background: rgb(34,193,195);
@@ -17,13 +17,12 @@
     flex-direction: column;
     justify-content: start;
     height: max-content;
-    margin-top: 70px;
   }
   @include tablet{
     padding: 24px;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 850px;
   }
   &__container {
     margin: auto 0;
@@ -46,6 +45,7 @@
     font-family: "RobotoBold";
     @include mobile {
       font-size: 40px;
+      margin-top: 24px;
     }
   }
   &--subheading {

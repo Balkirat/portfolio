@@ -27,7 +27,7 @@
     justify-content: space-evenly;
     @include mobile {
       width: 100%;
-      margin: 40px auto;
+      margin: 40px auto 0;
     }
     & > img,
     svg {

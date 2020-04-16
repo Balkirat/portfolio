@@ -3,15 +3,20 @@
 @import "../../styles/partials/breakpoints";
 @import "../../styles/partials/fonts";
 
+#main{
+  height: 750px;
+  @include mobile{
+    height: 500px;
+  }
+}
+
 .main {
-  position: relative;
-  top: 90vh;
+ // position: relative;
+ // top: 90vh;
   width: 100%;
   @include mobile{
     top: 450px;
   }
-  @include tablet{
-    top: 750px;
-  }
+
 }
 
