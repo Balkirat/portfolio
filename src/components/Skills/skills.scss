@@ -4,11 +4,10 @@
 @import "../../styles/partials/fonts";
 
 .skills {
-  background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-  
-  
-  clip-path: polygon(0 11%, 100% 0, 99% 100%, 0% 100%);
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
   &__heading {
     // margin-top: 100px;
     padding-top: 200px;
