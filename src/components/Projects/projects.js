@@ -50,7 +50,7 @@ class Projects extends Component {
               </h4>
               <div className="project__info__links">
                 <a>
-                  <button className="project__info__button project__info__button--red">
+                  <button className="project__info__button project__info__button--red project__info__button--disabled " >
                     Live
                   </button>
                 </a>

@@ -9,8 +9,11 @@
   height: 600px;
   justify-content: space-evenly;
   padding-bottom: 150px;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 13%, rgba(253,187,45,1) 100%);
+  background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
   clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
   @include mobile {
     padding: 16px;

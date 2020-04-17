@@ -108,6 +108,10 @@
           margin-right: 4px;
         }
       }
+      &--disabled{
+        opacity: 0.8;
+        cursor: not-allowed;
+      }
     }
   }
   &__images {
