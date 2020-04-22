@@ -24,12 +24,19 @@
     width: 90%;
     margin: 0 auto;
   }
-  &__individual{
+  &__individual {
     display: flex;
-    
+  }
+  &__individual:nth-last-child(odd) {
+    flex-direction: row;
+    text-align: right;
+  }
+  &__individual:nth-last-child(even) {
+    flex-direction: row-reverse;
+    text-align: left;
   }
   &__info {
-    width: 40%;
+    width: 60%;
     transition: all 0.3s ease 0s;
     @include mobile {
       width: 100%;
@@ -40,7 +47,6 @@
     &--heading {
       margin-bottom: 16px;
       color: black;
-      text-align: center;
       font-family: "RobotoBold";
       @include tablet {
         margin-top: 64px;
@@ -48,7 +54,6 @@
     }
     &--subheading {
       color: black;
-      text-align: center;
       line-height: 28px;
       margin-bottom: 16px;
       font-family: "RobotoMedium";
@@ -63,7 +68,6 @@
       }
     }
     &--tech {
-      text-align: center;
       font-family: "RobotoRegular";
       color: #f61c52;
       @include mobile {
@@ -100,15 +104,15 @@
           margin-right: 4px;
         }
       }
-      &--disabled{
+      &--disabled {
         opacity: 0.8;
         cursor: not-allowed;
       }
     }
   }
   &__images {
-    width: 50%;
-    height: fit-content;
+    width: 40%;
+    height: auto;
     @include mobile {
       width: 80%;
       height: 300px;
@@ -122,108 +126,14 @@
     }
     &--slider {
       border-radius: 5px;
-      height: 520px;
+      height: auto;
       width: 100%;
-      @include mobile {
-        height: 250px;
-      }
-      @include tablet {
-        height: 450px;
-      }
-    }
-  }
-}
-
-.project2 {
-  margin-top: 50px;
-  @include mobile {
-    margin: 80px auto;
-  }
-  &__card {
-    width: 60vw;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 14px -5px;
-    background-image: linear-gradient(
-      270deg,
-      rgb(169, 34, 255) 0%,
-      rgb(97, 30, 255) 100%
-    );
-    margin: 0px auto 3rem;
-    border-radius: 10px;
-    transition: all 0.3s ease 0s;
-    @include mobile {
-      width: 80%;
-      flex-direction: column;
-      height: max-content;
-      justify-content: initial;
-      padding: 16px;
-    }
-    @include tablet {
-      width: 85%;
-      flex-direction: column;
-      height: 500px;
-      justify-content: initial;
-      padding: 16px;
-    }
-    &--color {
-      background: rgb(89, 101, 175);
-      background: radial-gradient(
-        circle,
-        rgba(89, 101, 175, 1) 100%,
-        rgba(43, 45, 128, 0.07886904761904767) 100%
-      );
-    }
-  }
-  &__image {
-    width: 40%;
-    @include mobile {
-      width: 100%;
-      max-width: 420px;
-    }
-    @include tablet {
-      width: 100%;
-      max-width: 500px;
-    }
-    & > img {
-      width: 90%;
-      @include mobile {
-        width: 100%;
-      }
-      @include tablet {
-        width: 100%;
-      }
-    }
-    &--bigger {
-      width: 100%;
-      @include mobile {
-        margin-left: 10px;
-      }
-    }
-  }
-  &__info {
-    color: white;
-    width: 40%;
-    text-align: start;
-    @include mobile {
-      width: 100%;
-      text-align: center;
-    }
-    @include tablet{
-      width: 100%;
-      text-align: left;
-    }
-    &--heading {
-      font-family: "RobotoMedium";
-      margin-bottom: 8px;
-    }
-    &--subheading {
-      font-family: "RobotoMedium";
-    }
-    &--tech {
-      color: #f61c52;
+      // @include mobile {
+      //   height: 250px;
+      // }
+      // @include tablet {
+      //   height: 450px;
+      // }
     }
   }
 }
@@ -232,4 +142,5 @@
 .slick-next:before {
   color: black;
   opacity: 0.8 !important;
+  display: none;
 }

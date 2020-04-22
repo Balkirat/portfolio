@@ -77,9 +77,6 @@ class Projects extends Component {
                     <img className="project__images--slider" src={home1}></img>
                   </div>
                   <div>
-                    <img className="project__images--slider" src={find}></img>
-                  </div>
-                  <div>
                     <img className="project__images--slider" src={find2}></img>
                   </div>
                   <div>
@@ -89,18 +86,12 @@ class Projects extends Component {
                     <img className="project__images--slider" src={search}></img>
                   </div>
                   <div>
-                    <img className="project__images--slider" src={login}></img>
-                  </div>
-                  <div>
                     <img className="project__images--slider" src={search}></img>
                   </div>
                 </Slider>
               </div>
             </div>
             <div className="project__individual">
-              <div className="project__images">
-                <img className="project__images--slider" src={potter}></img>
-              </div>
               <div className="project__info">
                 <h1 className="project__info--heading">SORTING HAT</h1>
                 <h3 className="project__info--subheading">
@@ -135,21 +126,25 @@ class Projects extends Component {
                   </a>
                 </div>
               </div>
-              <div className="project__individual">
-                <div className="project__card project__card--color">
-                  <div className="project__info">
-                    <h2 className="project__info--heading">BRAINFLIX</h2>
-                    <h4 className="project__info--subheading">
-                      This project is made using React, uses Node.js/Express
-                      RESTful API features, and has a fully responsive
-                      front-end. Brainflix mimics the Youtube UI and the user
-                      can upload a video or comment on existing videos.
-                    </h4>
-                    <h4 className="project__info--subheading project__info--tech">
-                      {" "}
-                      React / JavaScript / Sass / Node.js / Express
-                    </h4>
-                    <div className="project__info__links">
+              <div className="project__images">
+                <img className="project__images--slider" src={potter}></img>
+              </div>
+            </div>
+
+            <div className="project__individual">
+              <div className="project__info">
+                <h2 className="project__info--heading">BRAINFLIX</h2>
+                <h4 className="project__info--subheading">
+                  This project is made using React, uses Node.js/Express RESTful
+                  API features, and has a fully responsive front-end. Brainflix
+                  mimics the Youtube UI and the user can upload a video or
+                  comment on existing videos.
+                </h4>
+                <h4 className="project__info--tech">
+                  {" "}
+                  React / JavaScript / Sass / Node.js / Express
+                </h4>
+                <div className="project__info__links">
                   <a>
                     <button className="project__info__button project__info__button--red project__info__button--disabled ">
                       Live
@@ -170,14 +165,9 @@ class Projects extends Component {
                     </button>
                   </a>
                 </div>
-                  </div>
-                  <div className="project__images">
-                    <img
-                      className="project__images--slider"
-                      src={brainflix}
-                    ></img>
-                  </div>
-                </div>
+              </div>
+              <div className="project__images">
+                <img className="project__images--slider" src={brainflix}></img>
               </div>
             </div>
           </article>
