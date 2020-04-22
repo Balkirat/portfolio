@@ -21,8 +21,9 @@
     }
   }
   &__container {
-    width: 98%;
     margin: 50px auto 0;
+    padding: 0 24px;
+    box-sizing: border-box;
   }
   &__individual {
     display: flex;
@@ -30,13 +31,23 @@
   }
   &__individual:nth-last-child(odd) {
     flex-direction: row;
-    text-align: right;
+    text-align: center;
     align-items: center;
+    @include mobile{
+      flex-direction: column-reverse;
+      text-align: left;
+      margin-bottom: 30px;
+    }
   }
   &__individual:nth-last-child(even) {
     flex-direction: row-reverse;
-    text-align: left;
+    text-align: center;
     align-items: center;
+    @include mobile{
+      flex-direction: column-reverse;
+      text-align: left;
+      margin-bottom: 70px;
+    }
   }
   &__info {
     width: 45%;
@@ -83,6 +94,9 @@
     &__links {
       display: flex;
       justify-content: center;
+      @include mobile{
+        justify-content: left;
+      }
     }
     &__button {
       font-family: "RobotoRegular";
@@ -119,20 +133,22 @@
   &__images {
     width: 45%;
     height: auto;
-    padding:20px 70px;
+    padding:40px 70px;
     background-color:rgb(241, 241, 241);
     @include mobile {
-      width: 80%;
-      height: 300px;
+      width: 50%;
+      max-width: 400px;
+      padding: 0px;
+      background-color: transparent;
+      
     }
     @include tablet {
-      width: 90%;
+      width: 30%;
     }
     &--slider {
-      
       width: 100%;
       height: auto;
-      
+      box-sizing: border-box;
       // @include mobile {
       //   height: 250px;
       // }
