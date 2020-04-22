@@ -21,22 +21,26 @@
     }
   }
   &__container {
-    width: 90%;
-    margin: 0 auto;
+    width: 98%;
+    margin: 50px auto 0;
   }
   &__individual {
     display: flex;
+    justify-content: space-evenly;
   }
   &__individual:nth-last-child(odd) {
     flex-direction: row;
     text-align: right;
+    align-items: center;
   }
   &__individual:nth-last-child(even) {
     flex-direction: row-reverse;
     text-align: left;
+    align-items: center;
   }
   &__info {
-    width: 60%;
+    width: 45%;
+    padding: 0 40px;
     transition: all 0.3s ease 0s;
     @include mobile {
       width: 100%;
@@ -46,6 +50,7 @@
     }
     &--heading {
       margin-bottom: 16px;
+      font-size: 40px;
       color: black;
       font-family: "RobotoBold";
       @include tablet {
@@ -54,8 +59,9 @@
     }
     &--subheading {
       color: black;
-      line-height: 28px;
+      line-height: 24px;
       margin-bottom: 16px;
+      font-size: 16px; 
       font-family: "RobotoMedium";
       @include mobile {
         font-size: 16px;
@@ -81,10 +87,10 @@
     &__button {
       font-family: "RobotoRegular";
       margin-top: 16px;
-      width: 140px;
+      width: 120px;
       outline: none;
       border: none;
-      height: 50px;
+      height: 40px;
       border-radius: 5px;
       border: 1px solid white;
       box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
@@ -111,8 +117,10 @@
     }
   }
   &__images {
-    width: 40%;
+    width: 45%;
     height: auto;
+    padding:20px 70px;
+    background-color:rgb(241, 241, 241);
     @include mobile {
       width: 80%;
       height: 300px;
@@ -120,14 +128,11 @@
     @include tablet {
       width: 90%;
     }
-    & > div {
-      width: 100%;
-      border-radius: 5px;
-    }
     &--slider {
-      border-radius: 5px;
-      height: auto;
+      
       width: 100%;
+      height: auto;
+      
       // @include mobile {
       //   height: 250px;
       // }
@@ -143,4 +148,8 @@
   color: black;
   opacity: 0.8 !important;
   display: none;
+}
+
+.carousel{
+  box-sizing: border-box;
 }

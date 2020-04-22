@@ -18,9 +18,8 @@ class Projects extends Component {
   render() {
     var settings = {
       className: "carousel",
-      dots: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3500,
       speed: 500,
       slidesToShow: 1,
@@ -36,13 +35,12 @@ class Projects extends Component {
               <div className="project__info">
                 <h1 className="project__info--heading">myMovie</h1>
                 <h3 className="project__info--subheading">
-                  This project is very special to me. I made this in 10 days as
-                  my capstone project and was created in React. myMovie tells
-                  the user about trending movies and suggests movies based on
-                  their mood. Users can watch trailers and also check to see if
-                  the movie is available on Netflix. I made an advance search
-                  (better filters) page to choose a movie, but it’s only
-                  available to signed-in users. More features are coming soon...
+                  It is created in React. myMovie tells the user about trending
+                  movies and suggests movies based on their mood. Users can
+                  watch trailers and also check to see if the movie is available
+                  on Netflix. I made an advance search (better filters) page to
+                  choose a movie, but it’s only available to signed-in users.
+                  More features are coming soon...
                 </h3>
                 <h4 className="project__info--tech">
                   {" "}
@@ -73,21 +71,11 @@ class Projects extends Component {
               </div>
               <div className="project__images">
                 <Slider {...settings}>
-                  <div>
-                    <img className="project__images--slider" src={home1}></img>
-                  </div>
-                  <div>
-                    <img className="project__images--slider" src={find2}></img>
-                  </div>
-                  <div>
-                    <img className="project__images--slider" src={find3}></img>
-                  </div>
-                  <div>
-                    <img className="project__images--slider" src={search}></img>
-                  </div>
-                  <div>
-                    <img className="project__images--slider" src={search}></img>
-                  </div>
+                  <img className="project__images--slider" src={home1}></img>
+                  <img className="project__images--slider" src={find2}></img>
+                  <img className="project__images--slider" src={find3}></img>
+                  <img className="project__images--slider" src={search}></img>
+                  <img className="project__images--slider" src={search}></img>
                 </Slider>
               </div>
             </div>
