@@ -11,7 +11,7 @@ import find3 from "../../assets/find3.png";
 import contact from "../../assets/contact.png";
 import login from "../../assets/titleSlide.png";
 import search from "../../assets/search.png";
-import potter from "../../assets/mockup.png";
+import potter from "../../assets/mockup1.png";
 import brainflix from "../../assets/brainflix2.png";
 
 class Projects extends Component {
@@ -19,7 +19,8 @@ class Projects extends Component {
     var settings = {
       className: "carousel",
       infinite: true,
-      autoplay: false,
+      autoplay: true,
+      dots:true,
       autoplaySpeed: 3500,
       speed: 500,
       slidesToShow: 1,
@@ -33,12 +34,10 @@ class Projects extends Component {
           <article className="project__container">
             <div className="project__individual">
               <div className="project__info">
-                <h1 className="project__info--heading">myMovie</h1>
+                <h1 className="project__info--heading">MY MOVIE</h1>
                 <h3 className="project__info--subheading">
-                  It is created in React. myMovie tells the user about trending
-                  movies and suggests movies based on their mood. Users can
-                  watch trailers and also check to see if the movie is available
-                  on Netflix. I made an advance search (better filters) page to
+                  React project that helps the user to find movies based on their mood. Users can
+                  watch trailers and also check availability of movies on Netflix. It has advance search page to
                   choose a movie, but it’s only available to signed-in users.
                   More features are coming soon...
                 </h3>

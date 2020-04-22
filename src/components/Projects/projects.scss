@@ -133,11 +133,13 @@
   &__images {
     width: 45%;
     height: auto;
-    padding:40px 70px;
+    display: flex;
+    justify-content: center;
+    padding:60px 40px;
     background-color:rgb(241, 241, 241);
     @include mobile {
       width: 50%;
-      max-width: 400px;
+      max-width: 500px;
       padding: 0px;
       background-color: transparent;
       
@@ -146,7 +148,7 @@
       width: 30%;
     }
     &--slider {
-      width: 100%;
+      width: 400px;
       height: auto;
       box-sizing: border-box;
       // @include mobile {
@@ -168,4 +170,5 @@
 
 .carousel{
   box-sizing: border-box;
+  width: 400px;
 }
