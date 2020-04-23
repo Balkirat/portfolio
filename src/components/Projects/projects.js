@@ -3,24 +3,24 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./projects.scss";
-import home from "../../assets/home.png";
 import home1 from "../../assets/home1.png";
-import find from "../../assets/find.png";
 import find2 from "../../assets/find2.png";
 import find3 from "../../assets/find3.png";
-import contact from "../../assets/contact.png";
-import login from "../../assets/titleSlide.png";
 import search from "../../assets/search.png";
 import potter from "../../assets/mockup1.png";
 import brainflix from "../../assets/brainflix2.png";
-
+// import covidTable from "../../assets/covidtable1.png";
+// import covidCard from "../../assets/covidCard.png";
+// import covidMobile from "../../assets/covidMobile.png";
+// import covidGraph from "../../assets/covidGraph.jpg";
+import covid from "../../assets/Covid-19.png";
 class Projects extends Component {
   render() {
     var settings = {
       className: "carousel",
       infinite: true,
       autoplay: true,
-      dots:true,
+      dots: true,
       autoplaySpeed: 3500,
       speed: 500,
       slidesToShow: 1,
@@ -36,9 +36,10 @@ class Projects extends Component {
               <div className="project__info">
                 <h1 className="project__info--heading">MY MOVIE</h1>
                 <h3 className="project__info--subheading">
-                  React project that helps the user to find movies based on their mood. Users can
-                  watch trailers and also check availability of movies on Netflix. It has advance search page to
-                  choose a movie, but it’s only available to signed-in users.
+                  React project that helps the user to find movies based on
+                  their mood. Users can watch trailers and also check
+                  availability of movies on Netflix. It has advance search page
+                  to choose a movie, but it’s only available to signed-in users.
                   More features are coming soon...
                 </h3>
                 <h4 className="project__info--tech">
@@ -78,6 +79,46 @@ class Projects extends Component {
                 </Slider>
               </div>
             </div>
+
+            <div className="project__individual">
+              <div className="project__info">
+                <h1 className="project__info--heading">COVID-19 TRACKER</h1>
+                <h3 className="project__info--subheading">
+                  A fully responsive application made to track the total No. of
+                  cases of coronavirus in the world. It visualize data in table
+                  and card forms
+                </h3>
+                <h4 className="project__info--tech ">
+                  {" "}
+                  React / JavaScript / Sass / API / Chart.js / react-map-gl
+                </h4>
+                <div className="project__info__links">
+                  <a target="_blank" href="https://balkiratsingh.com">
+                    <button className="project__info__button project__info__button--red  ">
+                      Live
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/Balkirat/covid-19"
+                  >
+                    <button className="project__info__button project__info__button--red">
+                      Git Repo
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div className="project__images">
+                {/* <Slider {...settings}>
+                  <img className="project__images--slider" src={covidCard}></img>
+                  <img className="project__images--slider" src={covidGraph}></img>
+                  <img className="project__images--slider" src={covidMobile}></img>
+                  <img className="project__images--slider" src={covidTable}></img>
+                </Slider>{" "} */}
+                <img className="project__images--slider" src={covid}></img>
+              </div>
+            </div>
+
             <div className="project__individual">
               <div className="project__info">
                 <h1 className="project__info--heading">SORTING HAT</h1>
@@ -91,27 +132,6 @@ class Projects extends Component {
                   {" "}
                   React / JavaScript / Sass / API
                 </h4>
-                <div className="project__info__links">
-                  <a>
-                    <button className="project__info__button project__info__button--red project__info__button--disabled ">
-                      Live
-                    </button>
-                  </a>
-                  <a target="_blank" href="https://github.com/Balkirat/myMovie">
-                    <button className="project__info__button project__info__button--red">
-                      Git Repo
-                    </button>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://www.loom.com/share/5d333033290c41f4a862d0c7819e5bb2"
-                  >
-                    {" "}
-                    <button className="project__info__button project__info__button--red">
-                      Video
-                    </button>
-                  </a>
-                </div>
               </div>
               <div className="project__images">
                 <img className="project__images--slider" src={potter}></img>
@@ -137,12 +157,12 @@ class Projects extends Component {
                       Live
                     </button>
                   </a>
-                  <a target="_blank" href="https://github.com/Balkirat/myMovie">
+                  <a target="_blank" href="https://github.com/Balkirat/balkirat-singh-brainflix">
                     <button className="project__info__button project__info__button--red">
                       Git Repo
                     </button>
                   </a>
-                  <a
+                  {/* <a
                     target="_blank"
                     href="https://www.loom.com/share/5d333033290c41f4a862d0c7819e5bb2"
                   >
@@ -150,7 +170,7 @@ class Projects extends Component {
                     <button className="project__info__button project__info__button--red">
                       Video
                     </button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="project__images">

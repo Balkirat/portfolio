@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-evenly;
   }
-  &__individual:nth-last-child(odd) {
+  &__individual:nth-last-child(even) {
     flex-direction: row;
     text-align: center;
     align-items: center;
@@ -39,7 +39,7 @@
       margin-bottom: 30px;
     }
   }
-  &__individual:nth-last-child(even) {
+  &__individual:nth-last-child(odd) {
     flex-direction: row-reverse;
     text-align: center;
     align-items: center;
