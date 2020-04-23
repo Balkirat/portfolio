@@ -17,14 +17,14 @@ function About() {
             Development Diploma Program. I am currently working as a freelancer
             and also looking for new employment opportunities. I enjoy building
             creative websites and learning new skills in Web Development.
-            <ReactTypingEffect
+            {/* <ReactTypingEffect
               className="typed-cursor"
               speed={100}
               staticText="Hi I'm"
               eraseDelay={1000}
               typingDelay={750}
               text={[" A Crickter", "A Web Developer"]}
-            />
+            /> */}
           </h3>
         </div>
         <div className="wrap">

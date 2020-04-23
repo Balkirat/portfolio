@@ -8,6 +8,7 @@
   position: absolute;
   top: 0px;
   overflow: hidden;
+  width: 100%;
   @include mobile {
     padding: 0;
   }

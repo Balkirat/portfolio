@@ -11,9 +11,11 @@
     font-family: "RobotoBold";
     font-size: 56px;
     padding-bottom: 30px;
+    padding-top: 80px;
     @include mobile {
       margin-bottom: 22px;
       font-size: 40px;
+      padding-top: 0;
     }
     @include tablet {
       margin-bottom: 24px;
@@ -28,6 +30,13 @@
   &__individual {
     display: flex;
     justify-content: space-evenly;
+    @include tablet{
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 50px;
+    }
   }
   &__individual:nth-last-child(even) {
     flex-direction: row;
@@ -35,7 +44,12 @@
     align-items: center;
     @include mobile{
       flex-direction: column-reverse;
-      text-align: left;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    @include tablet{
+      flex-direction: column-reverse;
+      text-align: center;
       margin-bottom: 30px;
     }
   }
@@ -45,8 +59,13 @@
     align-items: center;
     @include mobile{
       flex-direction: column-reverse;
-      text-align: left;
+      text-align: center ;
       margin-bottom: 70px;
+    }
+    @include tablet{
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-bottom: 30px;
     }
   }
   &__info {
@@ -55,9 +74,11 @@
     transition: all 0.3s ease 0s;
     @include mobile {
       width: 100%;
+      padding: 0;
     }
     @include tablet {
       width: 100%;
+      padding: 0;
     }
     &--heading {
       margin-bottom: 16px;
@@ -94,9 +115,6 @@
     &__links {
       display: flex;
       justify-content: center;
-      @include mobile{
-        justify-content: left;
-      }
     }
     &__button {
       font-family: "RobotoRegular";
@@ -142,21 +160,32 @@
       max-width: 500px;
       padding: 0px;
       background-color: transparent;
-      
     }
     @include tablet {
       width: 30%;
+      padding: 0px;
+      background-color: transparent;
     }
     &--slider {
       width: 400px;
       height: auto;
       box-sizing: border-box;
-      // @include mobile {
-      //   height: 250px;
-      // }
-      // @include tablet {
-      //   height: 450px;
-      // }
+      @include mobile {
+        width: 300px;
+        padding: 10px;
+        border-radius: 30px;
+        background: #ffffff;
+        -webkit-box-shadow: 20px 20px 60px #e47c7c, -20px -20px 60px #ffffff;
+        box-shadow: 20px 20px 60px #e47c7c, -20px -20px 60px #ffffff;
+      }
+      @include tablet {
+        width: 500px;
+        padding: 20px;
+        border-radius: 50px;
+        background: #ffffff;
+        -webkit-box-shadow: 20px 20px 60px #e47c7c, -20px -20px 60px #ffffff;
+        box-shadow: 20px 20px 60px #e47c7c, -20px -20px 60px #ffffff;
+      }
     }
   }
 }
@@ -171,4 +200,10 @@
 .carousel{
   box-sizing: border-box;
   width: 400px;
+  @include mobile{
+    width: 300px;
+  }
+  @include tablet{
+    width: 500px;
+  }
 }
