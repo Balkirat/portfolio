@@ -93,7 +93,7 @@ class Projects extends Component {
                   React / JavaScript / Sass / API / Chart.js / react-map-gl
                 </h4>
                 <div className="project__info__links">
-                  <a target="_blank" href="https://balkiratsingh.com">
+                  <a target="_blank" href="https://covid-19-trac.netlify.app/">
                     <button className="project__info__button project__info__button--red  ">
                       Live
                     </button>

@@ -19,6 +19,7 @@
     }
     @include tablet {
       margin-bottom: 24px;
+      padding-bottom: 0;
       font-size: 48px;
     }
   }
@@ -34,8 +35,7 @@
       width: 80%;
       height: auto;
       margin: 0 auto;
-      padding: 50px;
-      border-radius: 50px;
+      padding:0 0 70px 0;
     }
   }
   &__individual:nth-last-child(even) {
@@ -45,7 +45,7 @@
     @include mobile{
       flex-direction: column-reverse;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     @include tablet{
       flex-direction: column-reverse;
@@ -60,7 +60,7 @@
     @include mobile{
       flex-direction: column-reverse;
       text-align: center ;
-      margin-bottom: 70px;
+      margin-bottom: 40px;
     }
     @include tablet{
       flex-direction: column-reverse;
@@ -74,6 +74,7 @@
     transition: all 0.3s ease 0s;
     @include mobile {
       width: 100%;
+      z-index: 10;
       padding: 0;
     }
     @include tablet {
@@ -85,6 +86,9 @@
       font-size: 40px;
       color: black;
       font-family: "RobotoBold";
+      @include mobile {
+        margin: 8px 0;
+      }
       @include tablet {
         margin-top: 64px;
       }
@@ -181,7 +185,7 @@
       @include tablet {
         width: 500px;
         padding: 20px;
-        border-radius: 50px;
+        border-radius: 20px;
         background: #ffffff;
         -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
         box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
