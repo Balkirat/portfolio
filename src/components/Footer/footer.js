@@ -38,7 +38,7 @@ function footer() {
                 icon={faGithub}
               />
             </a>
-            <a target="_blank" href="https://drive.google.com/file/d/1_Ev5H2qC54tQr_Ig9ezoMNSQ7e0lmaGf/view?usp=sharing">
+            <a target="_blank" href="https://drive.google.com/open?id=1OQesZuXdUX8rLiYvfszNmP-XlZ1xG63N">
               <FontAwesomeIcon
                 className="footer__icons--border"
                 icon={faFile}
