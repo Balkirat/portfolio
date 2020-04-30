@@ -155,8 +155,8 @@
   &__images {
     width: 45%;
     height: auto;
-    max-height: 676px;
-    object-fit: scale-down;
+  //  max-height: 676px;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     padding:60px 40px;
@@ -164,19 +164,19 @@
     @include mobile {
       width: 50%;
       max-width: 500px;
-      max-height: 230px;
+     // max-height: 230px;
       padding: 0px;
       background-color: transparent;
     }
     @include tablet {
       width: 30%;
-      max-height: 385px;
+     // max-height: 385px;
       padding: 0px;
       background-color: transparent;
     }
     &--slider {
       width: 400px;
-      height: 100%;
+      height: auto;
       box-sizing: border-box;
       @include mobile {
         width: 300px;
