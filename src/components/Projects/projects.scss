@@ -176,7 +176,7 @@
     }
     &--slider {
       width: 400px;
-      height: auto;
+      height: 100%;
       box-sizing: border-box;
       @include mobile {
         width: 300px;
