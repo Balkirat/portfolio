@@ -154,7 +154,7 @@
   }
   &__images {
     width: 45%;
-    height: auto;
+  //  height: auto;
     display: flex;
     justify-content: center;
     padding:60px 40px;
@@ -172,7 +172,7 @@
     }
     &--slider {
       width: 400px;
-      height: auto;
+    //  height: auto;
       box-sizing: border-box;
       @include mobile {
         width: 300px;
