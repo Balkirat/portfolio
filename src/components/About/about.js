@@ -5,6 +5,7 @@ import html from "../../assets/html.png";
 import node from "../../assets/node.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
+import redux from "../../assets/redux.png"
 
 function About() {
   return (
@@ -30,7 +31,7 @@ function About() {
         <div className="wrap">
           <div className="wrap__cube">
             <div className="cube cube__front">
-              <img className="cube__img" src={html} alt="front"></img>
+              <img className="cube__img" src={redux} alt="front"></img>
             </div>
             <div className="cube cube__right">
               <img className="cube__img" src={js} alt="right"></img>

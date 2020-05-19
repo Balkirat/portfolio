@@ -9,6 +9,8 @@ import git from "../../assets/github.png";
 import c from "../../assets/c.png";
 import mongo from "../../assets/mongo.png";
 import css from "../../assets/css.png";
+import firebase from "../../assets/firebase.png";
+import redux from "../../assets/redux.png";
 
 function skills() {
   return (
@@ -17,12 +19,14 @@ function skills() {
         <h1 className="skills__heading">Skills</h1>
 
         <div className="skills__container">
-          <img src={html} alt="logos"></img>
           <img src={js} alt="logos"></img>
+          <img src={react} alt="logos"></img>
+          <img src={redux} alt="logos"></img>
+          <img src={node} alt="logos"></img>
+          <img src={html} alt="logos"></img>
           <img src={sass} alt="logos"></img>
           <img src={css} alt="logos"></img>
-          <img src={react} alt="logos"></img>
-          <img src={node} alt="logos"></img>
+          <img src={firebase} alt="logos"></img>      
           <img src={mongo} alt="logos"></img>
           <img src={c} alt="logos"></img>
           <svg viewBox="0 0 128 128">
