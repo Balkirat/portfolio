@@ -14,7 +14,7 @@ class Loading extends Component {
       this.setState({
         isLoaded: false,
       });
-    }, 4000);
+    }, 5000);
   }
 
   render() {
@@ -29,7 +29,7 @@ class Loading extends Component {
                 staticText=""
                 eraseDelay={1000}
                 typingDelay={750}
-                text={["WELCOME TO MY PORTFOLIO"]}
+                text={["WELCOME TO  PORTFOLIO"]}
               />
             </div>
           </div>
