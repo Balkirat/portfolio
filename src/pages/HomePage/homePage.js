@@ -22,7 +22,7 @@ class HomePage extends Component {
       this.setState({
         isLoaded: true,
       });
-    }, 3900);
+    }, 4000);
   }
 
   ToggleClickHandler = () => {
