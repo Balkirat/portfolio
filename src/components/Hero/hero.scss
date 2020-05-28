@@ -218,50 +218,50 @@
 }
 
 // this is for overlay
-.hero:before {
-  content: "";
-  position: absolute;
-  display: block;
- top: 0px;
- right: 0px;
- bottom: 8px;
- left: 0px;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  overflow: hidden;
-  @include mobile{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 5px;
-  }
-}
+// .hero:before {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//  top: 0px;
+//  right: 0px;
+//  bottom: 8px;
+//  left: 0px;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   z-index: 1;
+//   overflow: hidden;
+//   @include mobile{
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 5px;
+//   }
+// }
 
-//for h1 element
-.hero__text:before {
-  content: "<h1>";
-  font-family: "RobotoRegular";
-  color: white;
-  font-size: 18px;
-  position: relative;
-  margin-top: -63px;
-  left: -280px;
-  @include mobile{
-    font-size: 14px;
-    left: -130px;
-  }
-}
+// //for h1 element
+// .hero__text:before {
+//   content: "<h1>";
+//   font-family: "RobotoRegular";
+//   color: white;
+//   font-size: 18px;
+//   position: relative;
+//   margin-top: -63px;
+//   left: -280px;
+//   @include mobile{
+//     font-size: 14px;
+//     left: -130px;
+//   }
+// }
 
-.hero__text:after {
-    content: "</h1>";
-    font-family: "RobotoRegular";
-    color: white;
-    font-size: 18px;
-    position: relative;
-    margin-top: -10px;
-    left: -280px;
-    @include mobile{
-      font-size: 14px;
-      left: -130px;
-    }
-  }
+// .hero__text:after {
+//     content: "</h1>";
+//     font-family: "RobotoRegular";
+//     color: white;
+//     font-size: 18px;
+//     position: relative;
+//     margin-top: -10px;
+//     left: -280px;
+//     @include mobile{
+//       font-size: 14px;
+//       left: -130px;
+//     }
+//   }
