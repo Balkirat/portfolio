@@ -17,12 +17,6 @@ class HomePage extends Component {
       isNavOpen: false,
       isLoaded: false,
     };
-
-    setTimeout(() => {
-      this.setState({
-        isLoaded: true,
-      });
-    }, 5100);
   }
 
   ToggleClickHandler = () => {
@@ -52,7 +46,7 @@ class HomePage extends Component {
               isNavOpen={this.state.isNavOpen}
             />
           )}
-          {this.state.isLoaded && <Hero />}
+          <Hero />
         </div>
         <main className="main">
           <About />
