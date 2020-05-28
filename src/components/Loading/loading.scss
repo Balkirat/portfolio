@@ -1,11 +1,21 @@
+@import "../../styles/partials/resets";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+
+
 .loading {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;
     display: flex;
     &__text{
+        
         margin: auto;
         color: white;
         font-size: 5rem;
+        @include mobile{
+            font-size: 4rem;
+        }
     }
 }
