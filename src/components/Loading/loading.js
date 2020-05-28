@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactTypingEffect from "react-typing-effect";
 import "./loading.scss";
+import { motion } from "framer-motion";
 
 class Loading extends Component {
   constructor() {
@@ -17,21 +18,33 @@ class Loading extends Component {
   }
 
   render() {
+    const variants = {
+      open: { y: 0 },
+      closed: { x: "5%", transition: { delay: 100 } },
+    };
     return (
       <>
         {this.state.isLoaded && (
-          <div className="loading">
-            <div className="loading__text">
-              <ReactTypingEffect
-                className="typed-cursor"
-                speed={100}
-                staticText=""
-                eraseDelay={1000}
-                typingDelay={750}
-                text={["WELCOME TO MY PORTFOLIO"]}
-              />
+          <motion.nav
+            className="mobile-nav"
+            variants={variants}
+            initial="open"
+            animate={this.state.isLoaded ? "open" : "closed"}
+            transition={{ damping: 900 }}
+          >
+            <div className="loading">
+              <div className="loading__text">
+                <ReactTypingEffect
+                  className="typed-cursor"
+                  speed={100}
+                  staticText=""
+                  eraseDelay={1000}
+                  typingDelay={750}
+                  text={["WELCOME TO MY PORTFOLIO"]}
+                />
+              </div>
             </div>
-          </div>
+          </motion.nav>
         )}
       </>
     );

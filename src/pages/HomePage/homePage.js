@@ -44,9 +44,6 @@ class HomePage extends Component {
   render() {
     return (
       <>
-
-      {this.state.isLoaded && (
-        <>
         <div id="main">
           <Header ToggleClickHandler={this.ToggleClickHandler} />
           {this.state.mobileNavOpen && (
@@ -55,7 +52,7 @@ class HomePage extends Component {
               isNavOpen={this.state.isNavOpen}
             />
           )}
-          <Hero />
+          {this.state.isLoaded && <Hero />}
         </div>
         <main className="main">
           <About />
@@ -63,8 +60,6 @@ class HomePage extends Component {
           <Skills />
           <Footer />
         </main>
-        </>
-      )}
       </>
     );
   }
