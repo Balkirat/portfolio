@@ -7,46 +7,64 @@ import Projects from "../../components/Projects";
 import Skills from "../../components/Skills";
 import Footer from "../../components/Footer";
 import MobileNav from "../../components/MobileNav";
+import Loading from "../../components/Loading";
 
 class HomePage extends Component {
-  
   constructor() {
-    
     super();
     this.state = {
       mobileNavOpen: false,
-      isNavOpen: false
+      isNavOpen: false,
+      isLoaded: false,
     };
+
+    setTimeout(() => {
+      this.setState({
+        isLoaded: true,
+      });
+    }, 3900);
   }
 
- ToggleClickHandler = () => {
-    this.setState(prevState => {
-      return { mobileNavOpen: !prevState.mobileNavOpen, isNavOpen: !prevState.isNavOpen }
-    })
-  }
+  ToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {
+        mobileNavOpen: !prevState.mobileNavOpen,
+        isNavOpen: !prevState.isNavOpen,
+      };
+    });
+  };
 
   CloseClickHandler = () => {
     this.setState({
-      mobileNavOpen : false,
-      isNavOpen: false
-    }
-    )
-  }
+      mobileNavOpen: false,
+      isNavOpen: false,
+    });
+  };
 
   render() {
     return (
       <>
+
+      {this.state.isLoaded && (
+        <>
         <div id="main">
-          <Header  ToggleClickHandler={this.ToggleClickHandler}/>
-          {this.state.mobileNavOpen && <MobileNav CloseClickHandler={this.CloseClickHandler} isNavOpen={this.state.isNavOpen}/>}
+          <Header ToggleClickHandler={this.ToggleClickHandler} />
+          {this.state.mobileNavOpen && (
+            <MobileNav
+              CloseClickHandler={this.CloseClickHandler}
+              isNavOpen={this.state.isNavOpen}
+            />
+          )}
           <Hero />
         </div>
         <main className="main">
-          <About/>
+          <About />
           <Projects />
           <Skills />
           <Footer />
         </main>
+        </>
+      )}
       </>
     );
   }
