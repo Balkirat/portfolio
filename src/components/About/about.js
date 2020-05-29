@@ -3,7 +3,7 @@ import ReactTypingEffect from "react-typing-effect";
 import "./about.scss";
 import html from "../../assets/html.png";
 import node from "../../assets/node.png";
-import js from "../../assets/js.png";
+import js from "../../assets/js1.png";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.png"
 
