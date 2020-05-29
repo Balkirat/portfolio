@@ -7,20 +7,20 @@ import react from "../../assets/react.png";
 import sass from "../../assets/sass.png";
 import git from "../../assets/github.png";
 import c from "../../assets/c.png";
-import mongo from "../../assets/mongo.png";
+import mongo from "../../assets/mongo1.png";
 import css from "../../assets/css1.png";
 import firebase from "../../assets/firebase.png";
 import redux from "../../assets/redux.png";
+import mySql from "../../assets/mySql.png";
+import bootsrap from "../../assets/bootstrap.png"
 
 function skills() {
   return (
     <>
       <div className="skills" id="skill">
         <h1 className="skills__heading">Skills</h1>
-
         <div className="skills__container">
-          <img src={js} alt="logos"></img>
-          
+          <img src={js} alt="logos"></img>        
           <img src={react} alt="logos"></img>
           <img src={redux} alt="logos"></img>
           <img src={node} alt="logos"></img>
@@ -40,6 +40,8 @@ function skills() {
             <path d="M2.13,60c.21-1,.34-2.09.63-3.11,1.73-6.15,8.78-8.71,13.63-4.9,2.84,2.23,3.55,5.39,3.41,8.95h-16C3.54,67.3,8.13,71.14,14,69.18a6.09,6.09,0,0,0,3.87-4.31c.31-1,.81-1.17,1.76-.88a8.12,8.12,0,0,1-3.88,5.93,9.4,9.4,0,0,1-10.95-1.4,9.85,9.85,0,0,1-2.46-5.78c0-.34-.13-.68-.2-1Q2.13,60.85,2.13,60Zm1.69-.43H18.29c-.09-4.61-3-7.88-6.88-7.91C7.09,51.6,4,54.8,3.81,59.55Z"></path>
           </svg>
           <img src={git} alt="logos"></img>
+          <img src={mySql} alt="logos"></img>
+          <img src={bootsrap} alt="logos"></img>
         </div>
       </div>
     </>

@@ -29,21 +29,27 @@
     align-items: center;
     border-right: 2px dashed white;
     padding: 10px 0;
+
     @include mobile {
       width: 100%;
       border: none;
       margin-top: 16px;
-      
     }
     &--border {
       font-size: 30px;
       padding: 15px;
       color: white;
-      border: 2px solid white;
-      background-color: rgb(54, 66, 233);
-      border-radius: 40%;
+     // background-color: rgb(54, 66, 233);
+      border: 3px solid white;
+      /* background-color: #3642e9; */
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+     // border-radius: 43%;
+      transition: .3s;
       cursor: pointer;
-      @include mobile{
+      &:hover {
+        transform: scale(1.10, 1.10);
+      }
+      @include mobile {
         font-size: 20px;
       }
     }
@@ -62,7 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include mobile{
+    @include mobile {
       width: 100%;
     }
   }
