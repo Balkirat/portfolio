@@ -13,7 +13,7 @@ class Loading extends Component {
       this.setState({
         isLoaded: false,
       });
-    }, 5000);
+    }, 4000);
   }
 
   render() {
@@ -24,7 +24,7 @@ class Loading extends Component {
             <div className="loading__text">
               <ReactTypingEffect
                 className="typed-cursor"
-                speed={100}
+                speed={180}
                 staticText=""
                 eraseDelay={1000}
                 typingDelay={750}

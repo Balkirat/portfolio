@@ -17,7 +17,7 @@ class Hero extends Component {
       this.setState({
         isLoaded: true,
       });
-    }, 5100);
+    }, 3900);
   }
   render() {
     return (
