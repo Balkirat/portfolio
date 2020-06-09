@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactTypingEffect from "react-typing-effect";
 import "./loading.scss";
 
-
 class Loading extends Component {
   constructor() {
     super();
@@ -14,7 +13,7 @@ class Loading extends Component {
       this.setState({
         isLoaded: false,
       });
-    }, 7000);
+    }, 5000);
   }
 
   render() {
@@ -29,7 +28,7 @@ class Loading extends Component {
                 staticText=""
                 eraseDelay={1000}
                 typingDelay={750}
-                text={["WELCOME TO MY PORTFOLIO"]}
+                text={["LOADING...."]}
               />
             </div>
           </div>
