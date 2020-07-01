@@ -53,7 +53,7 @@ function footer() {
                 icon={faFile}
               />
             </a>
-            <h2>Made with <span>❤️</span> in React</h2>
+            <h2>Made with love in React</h2>
           </div>
           <div className="footer__details">
             <h1>Balkirat Singh</h1>
