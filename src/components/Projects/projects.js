@@ -9,10 +9,6 @@ import find3 from "../../assets/find3.png";
 import search from "../../assets/search.png";
 import potter from "../../assets/mockup1.png";
 import brainflix from "../../assets/brainflix2.png";
-// import covidTable from "../../assets/covidtable1.png";
-// import covidCard from "../../assets/covidCard.png";
-// import covidMobile from "../../assets/covidMobile.png";
-// import covidGraph from "../../assets/covidGraph.jpg";
 import covid from "../../assets/Covid-19.png";
 class Projects extends Component {
   render() {
@@ -48,18 +44,18 @@ class Projects extends Component {
                   DataBase API / Rapid API
                 </h4>
                 <div className="project__info__links">
-                  <a>
+                  <a href="/">
                     <button className="project__info__button project__info__button--red project__info__button--disabled ">
                       Live
                     </button>
                   </a>
-                  <a target="_blank" href="https://github.com/Balkirat/myMovie">
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Balkirat/myMovie">
                     <button className="project__info__button project__info__button--red">
                       Git Repo
                     </button>
                   </a>
                   <a
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     href="https://www.loom.com/share/5d333033290c41f4a862d0c7819e5bb2"
                   >
                     {" "}
@@ -71,11 +67,11 @@ class Projects extends Component {
               </div>
               <div className="project__images">
                 <Slider {...settings}>
-                  <img className="project__images--slider" src={home1}></img>
-                  <img className="project__images--slider" src={find2}></img>
-                  <img className="project__images--slider" src={find3}></img>
-                  <img className="project__images--slider" src={search}></img>
-                  <img className="project__images--slider" src={search}></img>
+                  <img alt="my movie project" className="project__images--slider" src={home1}></img>
+                  <img alt="my movie project" className="project__images--slider" src={find2}></img>
+                  <img alt="my movie project" className="project__images--slider" src={find3}></img>
+                  <img alt="my movie project" className="project__images--slider" src={search}></img>
+                  <img alt="my movie project" className="project__images--slider" src={search}></img>
                 </Slider>
               </div>
             </div>
@@ -93,13 +89,13 @@ class Projects extends Component {
                   React / JavaScript / Sass / API / Chart.js / react-map-gl
                 </h4>
                 <div className="project__info__links">
-                  <a target="_blank" href="https://covid-19-trac.netlify.app/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://covid-19-trac.netlify.app/">
                     <button className="project__info__button project__info__button--red  ">
                       Live
                     </button>
                   </a>
                   <a
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     href="https://github.com/Balkirat/covid-19"
                   >
                     <button className="project__info__button project__info__button--red">
@@ -109,13 +105,7 @@ class Projects extends Component {
                 </div>
               </div>
               <div className="project__images">
-                {/* <Slider {...settings}>
-                  <img className="project__images--slider" src={covidCard}></img>
-                  <img className="project__images--slider" src={covidGraph}></img>
-                  <img className="project__images--slider" src={covidMobile}></img>
-                  <img className="project__images--slider" src={covidTable}></img>
-                </Slider>{" "} */}
-                <img className="project__images--slider" src={covid}></img>
+                <img alt="covid-19 movie project" className="project__images--slider" src={covid}></img>
               </div>
             </div>
 
@@ -134,7 +124,7 @@ class Projects extends Component {
                 </h4>
               </div>
               <div className="project__images">
-                <img className="project__images--slider" src={potter}></img>
+                <img alt="Sorting hat project" className="project__images--slider" src={potter}></img>
               </div>
             </div>
 
@@ -152,18 +142,18 @@ class Projects extends Component {
                   React / JavaScript / Sass / Node.js / Express
                 </h4>
                 <div className="project__info__links">
-                  <a>
+                  <a href="/"> 
                     <button className="project__info__button project__info__button--red project__info__button--disabled ">
                       Live
                     </button>
                   </a>
-                  <a target="_blank" href="https://github.com/Balkirat/balkirat-singh-brainflix">
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Balkirat/balkirat-singh-brainflix">
                     <button className="project__info__button project__info__button--red">
                       Git Repo
                     </button>
                   </a>
                   {/* <a
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     href="https://www.loom.com/share/5d333033290c41f4a862d0c7819e5bb2"
                   >
                     {" "}
@@ -174,7 +164,7 @@ class Projects extends Component {
                 </div>
               </div>
               <div className="project__images">
-                <img className="project__images--slider" src={brainflix}></img>
+                <img alt="project brainflix" className="project__images--slider" src={brainflix}></img>
               </div>
             </div>
           </article>

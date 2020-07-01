@@ -1,7 +1,7 @@
 import React from "react";
 import "./mobileNav.scss";
 import { motion } from "framer-motion";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 

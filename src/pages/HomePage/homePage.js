@@ -7,7 +7,6 @@ import Projects from "../../components/Projects";
 import Skills from "../../components/Skills";
 import Footer from "../../components/Footer";
 import MobileNav from "../../components/MobileNav";
-import Loading from "../../components/Loading";
 
 class HomePage extends Component {
   constructor() {

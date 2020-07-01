@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import background from "../../assets/heroimg4.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./hero.scss";
-import { render } from "@testing-library/react";
 
 class Hero extends Component {
   constructor() {
@@ -23,7 +22,7 @@ class Hero extends Component {
     return (
       <>
         <div className="hero">
-          <img className="hero__background" src={background}></img>
+          <img alt="mountain background" className="hero__background" src={background}></img>
           {this.state.isLoaded && (
             <div className="hero__text">
               <svg

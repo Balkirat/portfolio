@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.scss";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +11,11 @@ function footer() {
         <h1 className="footer__heading">CONTACT ME</h1>
         <div className="footer__container">
           <div className="footer__icons">
-            <a href="mailto:cheemaballu@gmail.com" target="_blank">
+            <a
+              href="mailto:cheemaballu@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 className="footer__icons--border"
                 icon={faEnvelope}
@@ -20,6 +23,7 @@ function footer() {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
               href="http://www.linkedin.com/in/balkirat-singh"
             >
@@ -30,6 +34,7 @@ function footer() {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
               href="https://github.com/Balkirat"
             >
@@ -38,13 +43,17 @@ function footer() {
                 icon={faGithub}
               />
             </a>
-            <a target="_blank" href="https://drive.google.com/open?id=1OQesZuXdUX8rLiYvfszNmP-XlZ1xG63N">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/open?id=1OQesZuXdUX8rLiYvfszNmP-XlZ1xG63N"
+            >
               <FontAwesomeIcon
                 className="footer__icons--border"
                 icon={faFile}
               />
             </a>
-            <h2>Made with ❤️ in React</h2>
+            <h2>Made with <span>❤️</span> in React</h2>
           </div>
           <div className="footer__details">
             <h1>Balkirat Singh</h1>
